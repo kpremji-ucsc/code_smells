@@ -8,7 +8,7 @@ A **Large Class** is a class that tries to do too much: too many fields, methods
 
 ### How It Arises
 
-Classes rarely start large. A `Player` class begins with movement, and then it's just *easier* to add health there, then inventory, then UI updates, because the class is already open and has access to everything. Although each addition is quite small and non-trivial, it eventually adds up to be a giant mess that nobody wants to deal with, so sectioning off early is important.
+Classes are not planned to be large and chaotic; a `Player` class begins with movement, and then it's just *easier* to add health there, then inventory, then UI updates, because the class is already open and has access to everything. Although each addition is quite small and non-trivial, it eventually adds up to be a giant mess that nobody wants to deal with, so sectioning off early is important.
 
 ### Why It's a Problem
 
