@@ -6,8 +6,6 @@ This presentation is about the code smell **Large Class** with examples in **C#*
 
 A **Large Class** is a class that tries to do too much: too many fields, methods, and responsibilities. Funny enough this is also known as a **God Object** because it knows and controls everything.
 
-A quick test: if describing the class takes the word **"and"** ("it moves the player *and* tracks health *and* updates the UI *and* saves the game"), it probably has too many jobs.
-
 ### How It Arises
 
 Classes rarely start large. A `Player` class begins with movement, and then it's just *easier* to add health there, then inventory, then UI updates, because the class is already open and has access to everything. Although each addition is quite small and non-trivial, it eventually adds up to be a giant mess that nobody wants to deal with, so sectioning off early is important.
